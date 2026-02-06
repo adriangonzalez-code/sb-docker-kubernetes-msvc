@@ -21,11 +21,10 @@ import lombok.ToString;
 @Table(name = "accounts")
 public class Account extends BaseEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "customer_id")
     private Long customerId;
 
+    @Id
     @Column(name = "account_number")
     private Long accountNumber;
 
